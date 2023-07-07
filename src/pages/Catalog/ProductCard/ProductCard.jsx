@@ -22,7 +22,7 @@ const ProductCard = () => {
   useEffect(() => {
     axios
       .get(
-        `http://localhost:3333/${category}${
+        `https://gospodin-rusan.onrender.com/${category}${
           category !== "catalog" ? "-" + types.type : ""
         }?id=${id}`
       )
