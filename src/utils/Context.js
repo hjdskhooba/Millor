@@ -26,6 +26,7 @@ export const Context = (props) => {
   const [user, setUser] = useState([]);
 
   const addCart = (product) => {
+    console.log(product)
     setCart((prev) => [
       ...prev,
       {
