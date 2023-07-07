@@ -170,7 +170,7 @@ const Cart = () => {
                       <img width="90" height="80" src={item.image} alt="" />
                       <div className="Cart-description">
                         <h3 className="Cart-des-h3">{item.title}</h3>
-                        <p>мытая, натуральная, смесь</p>
+                        <p>{item["processing method"] + " " + item["type of coffee"] + " " + item["cooking method"]}</p>
                         <p className="Cart-des-p">250 г.</p>
                       </div>
                     </div>
