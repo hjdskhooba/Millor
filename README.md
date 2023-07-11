@@ -5,7 +5,7 @@
 A website where people can order coffee drinks to go from a coffee shop. Users can order coffee as a guest or use
 their created account. Authenticated users can also view their previous orders.
 
-### Project Description
+### Project Descriptions
 
 #### Goal
 
