@@ -19,7 +19,8 @@ is due to my favorite morning hobby of drinking espresso drinks and making them.
 
 The database used in this project is MongoDB. Originally the drinks and cart sessions were in Firebase, but I wanted
 more experience working with MongoDB. I also started with only ReactJS, but then decided to create a full-stack project
-with NextJS. With NextJS, it was easy to host the project on Vercel for production and implement serverless functions.
+with NextJS. With NextJS, it was easy to host the project on Vercel for production and implement serverless functions
+.
 
 The features mentioned below started as to do features I wanted to implement (Please see my previous commits to see
 how that process went through). I started out with a project I did partially guided by
