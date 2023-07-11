@@ -7,7 +7,7 @@ their created account. Authenticated users can also view their previous orders.
 
 ### Project Descriptions
 
-#### Goal
+#### Goal of this project
 
 The goal of this project was to show the ability to use the tools mentioned [below](#tools) and implement the
 features also shown [below](#features). Another goal was to have experience with the Javascript frameworks and
