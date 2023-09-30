@@ -2,17 +2,19 @@ import React, { useEffect } from "react";
 import rating from "../../../../assets/Catalog/Coffee/Filters/rating.svg";
 import { useState } from "react";
 import axios from "axios";
+import CustomContext from "../../../utils/Context.js"
 import { Link } from "react-router-dom";
 
-const VendingItems = ({ type }) => {
+const VendingItems = () => {
   const [cards, setCards] = useState([]);
   const [modal, setModal] = useState("showC");
   const [sorting, setSorting] = useState("Сортировка");
+  const {types} = useContext(CustomContext)
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   useEffect(() => {
-    const url = `https://gospodin-rusan.onrender.com/Products-for-vending-one?`;
+    const url = `https://gospodin-rusan.onrender.com/Products-for-vending-${types.type}?`;
     axios
       .get(
         url +
@@ -41,7 +43,7 @@ const VendingItems = ({ type }) => {
         }
         console.log(error.config);
       });
-  }, [sorting, type]);
+  }, [sorting, types]);
   const closeSorting = () => {
     document.body.children[1].childNodes[5].addEventListener(
       "click",
