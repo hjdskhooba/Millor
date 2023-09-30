@@ -5,7 +5,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import { CustomContext } from "../../../../utils/Context";
 
-const TeaItems = ({ type }) => {
+const TeaItems = () => {
   const [cards, setCards] = useState([]);
   const [modal, setModal] = useState("showC");
   const [sorting, setSorting] = useState("Сортировка");
