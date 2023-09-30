@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import rating from "../../../../assets/Catalog/Coffee/Filters/rating.svg";
 import { useState } from "react";
 import axios from "axios";
-import CustomContext from "../../../utils/Context.js"
+import { CustomContext } from "../../../../utils/Context";
 import { Link } from "react-router-dom";
 
 const VendingItems = () => {
