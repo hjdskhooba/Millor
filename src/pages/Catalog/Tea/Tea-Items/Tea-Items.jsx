@@ -9,12 +9,12 @@ const TeaItems = ({ type }) => {
   const [cards, setCards] = useState([]);
   const [modal, setModal] = useState("showC");
   const [sorting, setSorting] = useState("Сортировка");
-  const { addCart, chooseId, category } = useContext(CustomContext);
+  const { addCart, chooseId, category, types } = useContext(CustomContext);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   useEffect(() => {
-    const url = `https://gospodin-rusan.onrender.com/coffee-drinks-one?`;
+    const url = `https://gospodin-rusan.onrender.com/coffee-drinks-${types.type}?`;
     axios
       .get(
         url +
@@ -43,7 +43,7 @@ const TeaItems = ({ type }) => {
         }
         console.log(error.config);
       });
-  }, [sorting, type]);
+  }, [sorting, types]);
   const closeSorting = () => {
     document.body.children[1].childNodes[5].addEventListener(
       "click",
