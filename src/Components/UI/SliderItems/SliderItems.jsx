@@ -43,7 +43,7 @@ const SliderItems = () => {
     <div className="Slider">
       <div className="Slider__show">
         <div className="Slider__inner">
-          {cards.map((item) => {
+          {cards?.length ? cards.map((item) => {
             if (item.category.includes("Скидки")) {
               return (
                 <div
@@ -206,7 +206,7 @@ const SliderItems = () => {
                 </div>
               );
             }
-          })}
+          }) : "Загрузка товаров..."}
         </div>
       </div>
       <button
