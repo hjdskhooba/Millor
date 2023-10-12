@@ -155,7 +155,7 @@ const CoffeeItems = ({ filters }) => {
               </div>
               <div className="coffee__cards-inner-row tocenter">
                 {/* <BsStar/> */}
-                {cards.map((item) => {
+                {cards?.length ? cards.map((item) => {
                   // Nujno propisat nemnogo logiki dlya cartochek.
                   let price = item.price;
                   return (
@@ -326,7 +326,7 @@ const CoffeeItems = ({ filters }) => {
                       </div>
                     </div>
                   );
-                })}
+                }) : "Загрузка товаров..."}
               </div>
               <br />
               <br />
